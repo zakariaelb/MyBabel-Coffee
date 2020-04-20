@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 int quantity = 0;
@@ -16,12 +17,14 @@ int quantity = 0;
         setContentView(R.layout.activity_main);
     }
         public void submitOrder(View view){
+            EditText NameField = (EditText)findViewById(R.id.NameField);
+            String NameValue = NameField.getText().toString();
             CheckBox whippedCreamCheckBox = (CheckBox) findViewById(R.id.whipped_cream_checkbox);
             boolean HasWhippedCream = whippedCreamCheckBox.isChecked();
             CheckBox chocolateCheckBox = (CheckBox) findViewById(R.id.chocolate_checkbox);
             boolean HasChocolate = chocolateCheckBox.isChecked();
             int price = calculatePrice(HasWhippedCream, HasChocolate);
-            String message = createOrderSummary(price, HasWhippedCream, HasChocolate);
+            String message = createOrderSummary(NameValue, price, HasWhippedCream, HasChocolate);
             displayMessage(message);
     }
         public void Decrement(View view) {
@@ -43,9 +46,9 @@ int quantity = 0;
             return quantity * basePrice;
     }
     /** *********************************************** */
-    private String createOrderSummary(int price, boolean addWhippedCream, boolean addChocolate) {
+    private String createOrderSummary(String NameValue, int price, boolean addWhippedCream, boolean addChocolate) {
 
-        String priceMessage = ("Name :" + "Z");
+        String priceMessage = ("Name :" + NameValue);
         priceMessage += "\n Add whipped Cream ? : " +addWhippedCream;
         priceMessage += "\n Add chocolate ? : " +addChocolate;
         priceMessage += "\n Quantity : " +quantity;
