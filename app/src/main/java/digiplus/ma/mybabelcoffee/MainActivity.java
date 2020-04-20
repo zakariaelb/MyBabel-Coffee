@@ -45,18 +45,7 @@ int quantity = 0;
             }
             return quantity * basePrice;
     }
-    /** *********************************************** */
-    private String createOrderSummary(String NameValue, int price, boolean addWhippedCream, boolean addChocolate) {
 
-        String priceMessage = ("Name :" + NameValue);
-        priceMessage += "\n Add whipped Cream ? : " +addWhippedCream;
-        priceMessage += "\n Add chocolate ? : " +addChocolate;
-        priceMessage += "\n Quantity : " +quantity;
-        priceMessage += "\n Total : $" + price;
-        priceMessage += "\n Thank you !";
-        return priceMessage;
-    }
-    /** *********************************************** */
 
     private void displayQuantity(int NumberOfCoffees) {
         TextView quantityTextView = (TextView) findViewById(R.id.quantity_text_view);
@@ -66,4 +55,16 @@ int quantity = 0;
         TextView orderSummaryTextView = (TextView) findViewById(R.id.order_summary_text_view);
         orderSummaryTextView.setText(message);
     }
+    /** *********************************************** */
+    private String createOrderSummary(String NameValue, int price, boolean addWhippedCream, boolean addChocolate) {
+
+        String priceMessage = ("Name : " + NameValue);
+        priceMessage += "\n Add whipped Cream ? : " +addWhippedCream;
+        priceMessage += "\n Add chocolate ? : " +addChocolate;
+        priceMessage += "\n Quantity : " +quantity;
+        priceMessage += "\n Total : $" + price;
+        priceMessage += "\n Thank you !";
+        return priceMessage;
+    }
+    /** *********************************************** */
 }
