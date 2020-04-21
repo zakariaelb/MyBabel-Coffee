@@ -41,6 +41,13 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         /** *********************************************** */
+        /**
+         *         String url = "https://api.whatsapp.com/send?phone="+2126;
+         *         Intent i = new Intent(Intent.ACTION_VIEW);
+         *         i.putExtra("sms_body", message);
+         *         i.setData(Uri.parse(url));
+         *         startActivity(i);
+         */
 
         displayMessage(message);
     }
