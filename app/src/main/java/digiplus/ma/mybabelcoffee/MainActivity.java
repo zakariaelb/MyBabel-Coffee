@@ -2,7 +2,9 @@ package digiplus.ma.mybabelcoffee;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.icu.text.NumberFormat;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -29,6 +31,17 @@ public class MainActivity extends AppCompatActivity {
         boolean HasChocolate = chocolateCheckBox.isChecked();
         int price = calculatePrice(HasWhippedCream, HasChocolate);
         String message = createOrderSummary(NameValue, price, HasWhippedCream, HasChocolate);
+
+        /** *********************************************** */
+            Intent intent = new Intent(Intent.ACTION_SENDTO);
+            intent.setData(Uri.parse("mailto:")); // only email apps should handle this
+            intent.putExtra(Intent.EXTRA_SUBJECT, "Commande de : " +NameValue);
+            intent.putExtra(Intent.EXTRA_TEXT, message);
+            if (intent.resolveActivity(getPackageManager()) != null) {
+                startActivity(intent);
+            }
+        /** *********************************************** */
+
         displayMessage(message);
     }
     public void Decrement(View view) {
