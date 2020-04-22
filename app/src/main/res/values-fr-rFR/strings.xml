@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MyBabel Coffee</string>
+    <string name="Hint">Nom</string>
+    <string name="Toppings">Toppings :</string>
+    <string name="Whipped_cream">Crème fouettée</string>
+    <string name="QUANTITY">QUANTITÉ :</string>
+    <string name="Chocolate">Chocolat</string>
+    <string name="Order_summary">Récapitulatif de la commande :</string>
+    <string name="ORDER">Commander</string>
+    <string name="Thank_you">Merci</string>
+    <string name="Order_summary_name">Nom :</string>
+    <string name="Order_summary_whipped_cream">Ajouter de la crème fouettée ?</string>
+    <string name="Order_summary_quantity">Quantité :</string>
+    <string name="Order_summary_chocolate">Ajouter du chocolat ?</string>
+    <string name="Order_summary_price">Total :</string>
+    <string name="Order_summary_email_subject">MyBabel, commande pour :</string>
+</resources>

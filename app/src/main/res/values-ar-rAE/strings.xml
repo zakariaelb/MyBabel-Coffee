@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MyBabel Coffee</string>
+    <string name="Hint">الاسم</string>
+    <string name="Toppings">الاضافات :</string>
+    <string name="Whipped_cream">كريمة مخفوقة :</string>
+    <string name="Chocolate">شوكولاتة :</string>
+    <string name="QUANTITY">كمية :</string>
+    <string name="Order_summary">ملخص الطلب :</string>
+    <string name="ORDER">طلب :</string>
+    <string name="Thank_you">شكرا :</string>
+    <string name="Order_summary_name">اسم :</string>
+    <string name="Order_summary_whipped_cream">أضيفي الكريمة المخفوقة ؟</string>
+    <string name="Order_summary_quantity">الكمية :</string>
+    <string name="Order_summary_chocolate">أضف شوكولا ؟</string>
+    <string name="Order_summary_price">مجموع :</string>
+    <string name="Order_summary_email_subject">طلب  من أجل :</string>
+</resources>

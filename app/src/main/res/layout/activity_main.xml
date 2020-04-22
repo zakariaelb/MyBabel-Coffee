@@ -14,34 +14,33 @@
         android:id="@+id/NameField"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Name ..."
+        android:hint="@string/Hint"
         android:inputType="textCapWords" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Toppings"
+        android:text="@string/Toppings"
         android:textSize="16sp"/>
     <CheckBox
         android:id="@+id/whipped_cream_checkbox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingRight="24dp"
-        android:text="Whipped cream"
+        android:text="@string/Whipped_cream"
         android:textSize="16sp"
         />
     <CheckBox
         android:id="@+id/chocolate_checkbox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingLeft="24dp"
-        android:text="Chocolate"
+        android:text="@string/Chocolate"
         android:textSize="16sp" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingTop="10dp"
         android:paddingBottom="10dp"
-        android:text="QUANTITY!" />
+        android:text="@string/QUANTITY" />
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -73,7 +72,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="15dp"
-        android:text="Order summary :"    />
+        android:text="@string/Order_summary"    />
     <TextView
         android:id="@+id/order_summary_text_view"
         android:layout_width="wrap_content"
@@ -85,6 +84,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="submitOrder"
-        android:text="ORDER"/>
+        android:text="@string/ORDER"/>
 </LinearLayout>
 </ScrollView>
